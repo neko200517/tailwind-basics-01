@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .wrapper {
+    @apply max-w-[1000px] mx-auto px-4;
+  }
+
+  .wrapper-no-padding {
+    @apply max-w-[1000px] mx-auto;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  tr,
+  td {
+    @apply border-[#c3c3c3];
+  }
+}
+
+.overlay {
+  background-color: rgba(#fff, 0.7);
+  background-blend-mode: overlay;
+}
+
+/*
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +55,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
